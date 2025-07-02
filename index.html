@@ -20,7 +20,6 @@
     position: relative;
   }
 
-  /* Corazones flotantes */
   .heart {
     position: absolute;
     width: 15px;
@@ -134,8 +133,7 @@
   }
 
   .panel {
-    height: 90px;
-    overflow: hidden;
+    height: auto;
     background: #fff;
     border-radius: 10px;
     border: 1px solid #ffd1d8;
@@ -150,19 +148,8 @@
     line-height: 1.3;
   }
 
-  .letter.open .panel:nth-child(1) {
+  .letter.open .panel {
     transform: rotateX(0deg);
-    transition-delay: 0.2s;
-  }
-
-  .letter.open .panel:nth-child(2) {
-    transform: rotateX(0deg);
-    transition-delay: 0.7s;
-  }
-
-  .letter.open .panel:nth-child(3) {
-    transform: rotateX(0deg);
-    transition-delay: 1.2s;
   }
 
   h3 {
@@ -183,13 +170,19 @@
   <div class="letter" id="letter">
     <div class="panel">
       <h3>🌸 Para Kim</h3>
-      <p>Hola niña linda. Te escribo esto con todo el cariño del mundo.</p>
+      <p>No sé cómo pasó, pero desde que llegaste a mi vida, algo dentro de mí cambió. Me haces sonreír con solo aparecer, me haces pensar en ti a cada rato. No te imaginas cuán especial te has vuelto para mí en tan poco tiempo.</p>
     </div>
     <div class="panel">
-      <p>Desde que empezamos a hablar, todo ha sido más bonito. Me inspiras, me haces sonreír, me haces sentir querido.</p>
+      <p>No dejo de pensar en tus palabras, en cómo me haces sentir con cada mensaje, con cada nota de voz, con cada “buenos días”. Es como si hubieras encendido una lucecita en mí que no quiere apagarse. 🕯️</p>
     </div>
     <div class="panel">
-      <p>Esto es solo una cartita digital, pero mis sentimientos son reales. Gracias por existir. Te pienso y te admiro muchísimo 💖</p>
+      <p>Y no es solo cursilería: realmente me importas, Kim. Me importas más de lo que debería tal vez, más de lo que imaginé que alguien podría importarme en tan poco tiempo. Te pienso con cariño, con ternura, con esas ganas locas de seguir conociéndote.</p>
+    </div>
+    <div class="panel">
+      <p>Me encariñé contigo, sí, y no me da miedo decirlo. Porque si algo he aprendido es que cuando alguien tan bonita como tú aparece en tu vida, hay que cuidarla, hay que valorarla. 💖</p>
+    </div>
+    <div class="panel">
+      <p>Así que gracias por ser tú. Por dejarme ser parte de tus días. Por hacerme sentir esto tan bonito. Te admiro, te pienso y... sí, también me gustas. Mucho. ✨</p>
     </div>
   </div>
 </div>
@@ -206,7 +199,6 @@
       letter.classList.add('open');
     }, 900);
 
-    // Corazones flotantes aleatorios
     for(let i=0; i<12; i++) {
       createHeart();
     }
